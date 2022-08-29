@@ -32,7 +32,6 @@
 }
 
 .panel {
-  padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
@@ -91,24 +90,34 @@ p {
 
 <div class="faqDiv">
   <center><h2 class="title">FAQs</h2></center>
-  <button class="accordion">
-    <hr>What is Divvy?
-  </button>
-  <div class="panel">
-    <p>Divvy is a payment service for splitting monthly payments between two or more people.</p>
+
+  <div>
+    <button class="accordion">
+      <hr>What is Divvy?
+    </button>
+    <div class="panel">
+      <p>Divvy is a payment service for splitting monthly payments between two or more people.</p>
+    </div>
   </div>
-  <button class="accordion">
-    <hr>How can you cancel out of a shared subscription payment?
-  </button>
-  <div class="panel">
-    <p>You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
+  
+  <div>
+    <button class="accordion">
+      <hr>How can you cancel out of a shared subscription payment?
+    </button>
+    <div class="panel">
+      <p class="last">You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
+    </div>
   </div>
-  <button class="accordion">
-    <hr>Can this be used for other payments besides monthly subscriptions?
-  </button>
-  <div class="panel">
-    <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
+
+  <div>
+    <button class="accordion">
+      <hr>Can this be used for other payments besides monthly subscriptions?
+    </button>
+    <div class="panel">
+      <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
+    </div>
   </div>
+
 </div>
 
 <center><footer class="copyrightTitle">© DivvyUp LLC, 2022.</footer></center>
