@@ -9,7 +9,7 @@
   <meta property="og:title"              content="Divvy | FAQs" />
   <meta property="og:description"        content="Split monthly payments between people." />
   <meta property="og:image"              content="background.png" />
-  <title>Divvy | Home</title>
+  <title>Divvy | Funding</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://use.typekit.net/zon4bwc.css">
 
@@ -32,7 +32,7 @@
       transform:translate(-50%,-50%);
       }
     #content {
-      margin-top: 225px;
+      margin-top: 75px;
       height: 500px;
       width: 100%;
       position: absolute;
@@ -137,12 +137,13 @@
       }
 
       #content {
-        margin-top: 250px;
+        margin-top: 75px;
         height: 500px;
-        width: 350px;
+        width: 150%;
         position: absolute;
         top: 50%;
         left:50%;
+        text-align: left;
         -webkit-transform:translate(-50%,-50%);
         transform:translate(-50%,-50%);
         font-family: bely-display;
@@ -173,6 +174,10 @@
         width: 75%;
       }
     }
+
+    h2 {
+      font-family: Helvetica;
+    }
   </style>
 </head>
 <body>
@@ -188,64 +193,14 @@
     </div>
   </center>
 
-  <center><h2 class="pitch">Share subscriptions between two or more people.</h2></center>
-
   <div id="container">
     <div id="content">
-      <center><h1>FAQs</h1></center>
-      <div>
-        <button class="accordion">
-          <hr>How does it work?
-        </button>
-        <div class="panel">
-          <p>Shared payments are made possible by using mutiple people's form of payments to add money to an online debit card based off pertanges defined before purchase.</p>
-        </div>
-      </div>
-      
-      <div>
-        <button class="accordion">
-          <hr>Can you give me an example?
-        </button>
-        <div class="panel">
-          <p class="last">Let's say you want to split a monthly payment with 3 friends that cost $30/month then each of your forms of payment would be charged $10 a month to equal the total $30 needed.</p>
-        </div>
-      </div>
+      <center><h2>Funding</h2></center>
+      <p></p>
 
-      <div>
-        <button class="accordion">
-          <hr>What happens if you want to cancel out of a shared subscription payment?
-        </button>
-        <div class="panel">
-          <p class="last">You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
-        </div>
-      </div>
-
-      <div>
-        <button class="accordion">
-          <hr>Is this used for payments besides monthly subscription services?
-        </button>
-        <div class="panel">
-          <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
-        </div>
-      </div>
     </div>
-</div>
+  </div>
 
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
   
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-  </script>
 </body>
 </html>
