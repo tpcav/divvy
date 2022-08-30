@@ -30,7 +30,8 @@
       font-style: normal;
       -webkit-transform:translate(-50%,-50%);
       transform:translate(-50%,-50%);
-      }
+    }
+
     #content {
       margin-top: 225px;
       height: 500px;
@@ -107,6 +108,11 @@
       padding: 20px;
     }
 
+    /* mouse over link */
+    a:hover {
+      color: #01A99E;
+    }
+
     .copyrightTitle {
       margin-top: 500px;
       font-size: 12pt;
@@ -127,8 +133,6 @@
     }
 
     @media only screen and (max-width: 600px) {
-      html {
-      }
 
       header {
         font-family: bely-display;
@@ -192,7 +196,9 @@
 
   <div id="container">
     <div id="content">
+
       <center><h1>FAQs</h1></center>
+
       <div>
         <button class="accordion">
           <hr>How does it work?
@@ -201,13 +207,13 @@
           <p>Shared payments are made possible by using mutiple people's form of payments to add money to an online debit card based off pertanges defined before purchase.</p>
         </div>
       </div>
-      
+    
       <div>
         <button class="accordion">
           <hr>Can you give me an example?
         </button>
         <div class="panel">
-          <p class="last">Let's say you want to split a monthly payment with 3 friends that cost $30/month then each of your forms of payment would be charged $10 a month to equal the total $30 needed.</p>
+          <p class="last">Let's say you want to split a monthly payment with three friends that cost $30/month. In that case, then each of your forms of payment would be charged $10 a month to equal the total $30 needed.</p>
         </div>
       </div>
 
@@ -228,6 +234,7 @@
           <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
         </div>
       </div>
+      
     </div>
 </div>
 
@@ -247,5 +254,6 @@
     });
   }
   </script>
+
 </body>
 </html>
