@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,100 +11,191 @@
   <meta property="og:image"              content="background.png" />
   <title>Divvy | FAQs</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>
-@import url("https://use.typekit.net/zon4bwc.css");
+  <link rel="stylesheet" href="https://use.typekit.net/zon4bwc.css">
 
-.accordion {
-  background-color: rgb(255, 255, 255);
-  color: #444;
-  cursor: pointer;
-  width: 90%;
-  border: none;
-  text-align: left;
-  margin-left: 22px;
-  margin-bottom: -50px;
-  font-size: 15px;
-  font-family: lora, serif;
-  color: #01A99E;
-  transition: 0.4s;
-  background-color: white;
-  z-index: 0;
-}
+  <style>
+    @import url("https://use.typekit.net/zon4bwc.css");
+    @import url("https://use.typekit.net/zon4bwc.css");
+    @import url("https://use.typekit.net/zon4bwc.css");
 
-.panel {
-  display: none;
-  background-color: white;
-  overflow: hidden;
-  z-index: 0;
-}
+    #container {
+      margin-top: 100px;
+      height: 50%;
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      font-family: bely-display,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      -webkit-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+      }
+    #content {
+      margin-top: 225px;
+      height: 500px;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      -webkit-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+      font-family: bely-display;
+    }
 
-p {
-  width: 90%;
-  margin-left: 30px;
-  font-size: 12pt;
-  font-family: lora, serif;
-}
+    .accordion {
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      font-size: 12pt;
+      color: #01A99E;
+      font-family: lora, serif;
+      transition: 0.4s;
+      z-index: 0;
+      width: 100%;
+      font-family: lora;
+      font-weight: 800;
+      background-color: rgba(255, 255, 255, 0.362)
+    }
 
-.title {
-  margin-top: 40px;
-  font-family: lora, serif;
-  font-weight: 800;
-  font-style: normal;
-  z-index: 0;
-}
+    .panel {
+      display: none;
+      overflow: hidden;
+      z-index: 0;
+      font-size: 12pt;
+      margin-left: 20px;
+      text-align: left;
+      font-family: lora;
+      font-weight: 800;
+      width: 90%;
+    }
 
-.coName {
-  font-family: lora, serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 32pt;
-}
+    hr {
+      width: 100%;
+    }
 
-.faqDiv {
-  margin-top: 50px;
-  z-index: 1;
-}
+    header {
+      font-family: bely-display;
+      font-size: 30pt;
+      width: 95vw;
+      padding-left: 15px;
+    }
 
-.copyrightTitle {
-  margin-top: 60px;
-  font-size: 12pt;
-  z-index: 1;
-  font-family: lora, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 12pt;
-}
+    p {
+      font-family: lora;
+      font-weight: 600px;
+    }
 
-.last {
-  margin-top: 40px;
-}
+    .heroImage {
+      width: 98%;
+      height: 20vh;
+    }
 
-a {
-  color: black;
-}
+    body {
+      margin-top: 30px;
+    }
 
-</style>
+    h1 {
+      font-size: 14pt;
+      margin-top: 30px;
+    }
+
+    a {
+      font-family: lora;
+      list-style: none;
+      color: black;
+      padding: 20px;
+    }
+
+    .copyrightTitle {
+      margin-top: 500px;
+      font-size: 12pt;
+      z-index: 1;
+      font-family: lora, serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12pt;
+    }
+
+    .pitch {
+      font-size: 18pt;
+      margin-top: 100px;
+      font-family: Helvetica;
+      font-weight: 100;
+      color: #01A99E;
+      width: 75%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      html {
+      }
+
+      header {
+        font-family: bely-display;
+        font-size: 30pt;
+        padding-left: 4px;
+      }
+
+      #content {
+        margin-top: 250px;
+        height: 500px;
+        width: 350px;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+        font-family: bely-display;
+      }
+
+      a {
+        font-family: lora;
+        list-style: none;
+        color: black;
+        padding: 10px;
+      }
+
+      .copyrightTitle {
+        margin-top: 450px;
+        font-size: 12pt;
+        font-family: lora, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12pt;
+      }
+
+      .pitch {
+        font-size: 18pt;
+        margin-top: 60px;
+        font-family: Helvetica;
+        font-weight: 100;
+        color: #01A99E;
+        width: 75%;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>Divvy</header>
 
-<div class="navBar">
-  <div class="nameDiv">
-    <header class="coName"><a href="index2.html">Divvy</a></header>
-  </div>
-</div>
+  <center>
+    <div class="links">
+      <img class="heroImage" src="background.png">
+      <a href="index2.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="#">Funding</a>
+      <a href="#">Resources</a>
+    </div>
+  </center>
 
-<div>
-  <img class="heroImage" src="background.png" width="100%" height="300px"><span></span>
-</div>
+  <center><h2 class="pitch">Share subscriptions between two or more people.</h2></center>
 
-<div id="container">
-  <div id="content">
-    <div class="faqDiv">
-      <center><h2 class="title">FAQs</h2></center>
-    
+  <div id="container">
+    <div id="content">
+      <center><h1>FAQs</h1></center>
       <div>
         <button class="accordion">
-          <hr>What is Divvy?
+          <hr>How does it work?
         </button>
         <div class="panel">
           <p>Divvy is a payment service for splitting monthly payments between two or more people.</p>
@@ -113,13 +204,13 @@ a {
       
       <div>
         <button class="accordion">
-          <hr>How can you cancel out of a shared subscription payment?
+          <hr>Can you cancel out of a shared subscription payment?
         </button>
         <div class="panel">
           <p class="last">You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
         </div>
       </div>
-    
+
       <div>
         <button class="accordion">
           <hr>Can this be used for other payments besides monthly subscriptions?
@@ -128,31 +219,24 @@ a {
           <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
         </div>
       </div>
-  </div>
+    </div>
 </div>
-
-
-</div>
-
-<center><footer class="copyrightTitle">© DivvyUp LLC, 2022.</footer></center>
-
 
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
-
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
 </body>
 </html>
