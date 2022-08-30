@@ -79,6 +79,7 @@
       font-family: bely-display;
       font-size: 30pt;
       width: 95vw;
+      padding-left: 15px;
     }
 
     p {
@@ -87,7 +88,7 @@
     }
 
     .heroImage {
-      width: 95vw;
+      width: 98%;
       height: 20vh;
     }
 
@@ -107,13 +108,30 @@
       padding: 20px;
     }
 
+    .copyrightTitle {
+      margin-top: 500px;
+      font-size: 12pt;
+      z-index: 1;
+      font-family: lora, serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 12pt;
+    }
+
     @media only screen and (max-width: 600px) {
-      .accordion {
-        
+      html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+      }
+
+      header {
+        font-family: bely-display;
+        font-size: 30pt;
+        padding-left: 4px;
       }
 
       #content {
-        margin-top: 75px;
+        margin-top: 100px;
         height: 500px;
         width: 300px;
         position: absolute;
@@ -123,7 +141,7 @@
         transform:translate(-50%,-50%);
         font-family: bely-display;
       }
-    }
+
 
       a {
         font-family: lora;
@@ -131,6 +149,17 @@
         color: black;
         padding: 20px;
       }
+
+      .copyrightTitle {
+        margin-top: 450px;
+        font-size: 12pt;
+        z-index: 1;
+        font-family: lora, serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 12pt;
+      }
+    }
   </style>
 </head>
 <body>
@@ -177,6 +206,8 @@
       </div>
     </div>
 </div>
+
+<center><footer class="copyrightTitle">© DivvyUp LLC, 2022.</footer></center>
 
 <script>
   var acc = document.getElementsByClassName("accordion");
