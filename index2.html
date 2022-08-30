@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+  <link rel="stylesheet" href="https://use.typekit.net/zon4bwc.css">
+
+  <style>
+    @import url("https://use.typekit.net/zon4bwc.css");
+    @import url("https://use.typekit.net/zon4bwc.css");
+    @import url("https://use.typekit.net/zon4bwc.css");
+
+    #container {
+      margin-top: 100px;
+      height: 50%;
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      font-family: bely-display,sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      -webkit-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+      }
+    #content {
+        height: 500px;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        -webkit-transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
+        font-family: bely-display;
+    }
+
+    .accordion {
+      color: #444;
+      cursor: pointer;
+      border: none;
+      text-align: left;
+      font-size: 12pt;
+      font-family: lora, serif;
+      color: #01A99E;
+      transition: 0.4s;
+      z-index: 0;
+      width: 100%;
+      font-family: lora;
+      font-weight: 800;
+      background-color: rgba(255, 255, 255, 0.362)
+    }
+
+    .panel {
+      display: none;
+      overflow: hidden;
+      z-index: 0;
+      font-size: 12pt;
+      margin-left: 20px;
+      text-align: left;
+      font-family: lora;
+      font-weight: 800;
+      width: 90%;
+    }
+
+    hr {
+      width: 100%;
+    }
+
+    header {
+      font-family: bely-display;
+      font-size: 30pt;
+    }
+
+    p {
+      font-family: lora;
+      font-weight: 600px;
+    }
+
+    .heroImage {
+      width: 95vw;
+      height: 20vh;
+    }
+
+    body {
+      
+    }
+
+    h1 {
+      font-size: 18pt;
+    }
+  </style>
+</head>
+<body>
+  <header>Divvy</header>
+
+  <div>
+    <img class="heroImage" src="background.png">
+  </div>
+
+  <div id="container">
+    <div id="content">
+      <center><h1>FAQs</h1></center>
+      <div>
+        <button class="accordion">
+          <hr>What is Divvy?
+        </button>
+        <div class="panel">
+          <p>Divvy is a payment service for splitting monthly payments between two or more people.</p>
+        </div>
+      </div>
+      
+      <div>
+        <button class="accordion">
+          <hr>How can you cancel out of a shared subscription payment?
+        </button>
+        <div class="panel">
+          <p class="last">You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
+        </div>
+      </div>
+
+      <div>
+        <button class="accordion">
+          <hr>Can this be used for other payments besides monthly subscriptions?
+        </button>
+        <div class="panel">
+          <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+</body>
+</html>

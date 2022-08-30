@@ -79,6 +79,27 @@ p {
   margin-top: 40px;
 }
 
+#container {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    background-color: #663399;
+}
+#content {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+    background-color: rgba(255,0,0,0.5);
+}
+
 </style>
 </head>
 <body>
@@ -93,35 +114,40 @@ p {
   <img class="heroImage" src="background.png" width="100%" height="300px"><span></span>
 </div>
 
-<div class="faqDiv">
-  <center><h2 class="title">FAQs</h2></center>
+<div id="container">
+  <div id="content">
+    <div class="faqDiv">
+      <center><h2 class="title">FAQs</h2></center>
+    
+      <div>
+        <button class="accordion">
+          <hr>What is Divvy?
+        </button>
+        <div class="panel">
+          <p>Divvy is a payment service for splitting monthly payments between two or more people.</p>
+        </div>
+      </div>
+      
+      <div>
+        <button class="accordion">
+          <hr>How can you cancel out of a shared subscription payment?
+        </button>
+        <div class="panel">
+          <p class="last">You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
+        </div>
+      </div>
+    
+      <div>
+        <button class="accordion">
+          <hr>Can this be used for other payments besides monthly subscriptions?
+        </button>
+        <div class="panel">
+          <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
+        </div>
+      </div>
+  </div>
+</div>
 
-  <div>
-    <button class="accordion">
-      <hr>What is Divvy?
-    </button>
-    <div class="panel">
-      <p>Divvy is a payment service for splitting monthly payments between two or more people.</p>
-    </div>
-  </div>
-  
-  <div>
-    <button class="accordion">
-      <hr>How can you cancel out of a shared subscription payment?
-    </button>
-    <div class="panel">
-      <p class="last">You can cancel out of a shared payment plan through your subscription settings. As long as the other parties do not object.</p>
-    </div>
-  </div>
-
-  <div>
-    <button class="accordion">
-      <hr>Can this be used for other payments besides monthly subscriptions?
-    </button>
-    <div class="panel">
-      <p class="last">This service can be used for other kinds of payments. No need to wait for those people to pay you back that owe you money.</p>
-    </div>
-  </div>
 
 </div>
 
