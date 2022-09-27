@@ -25,7 +25,7 @@
       position: absolute;
       top: 50%;
       left:50%;
-      font-family: bely-display,sans-serif;
+      font-family: Helvetica;
       font-weight: 400;
       font-style: normal;
       -webkit-transform:translate(-50%,-50%);
@@ -49,12 +49,12 @@
       text-align: left;
       font-size: 12pt;
       color: #000000;
-      font-family: lora, serif;
+      font-family: Helvetica;
       transition: 0.4s;
       z-index: 0;
       width: 100%;
-      font-family: lora;
-      font-weight: 800;
+      font-family: Helvetica;
+      font-weight: 400;
       background-color: rgba(255, 255, 255, 0.362);
     }
 
@@ -65,8 +65,8 @@
       font-size: 12pt;
       margin-left: 20px;
       text-align: left;
-      font-family: lora;
-      font-weight: 800;
+      font-family: Helvetica;
+      font-weight: 400;
       color: #01A99E;
       width: 90%;
     }
@@ -83,8 +83,7 @@
     }
 
     p {
-      font-family: lora;
-      font-weight: 400px;
+      font-family: Helvetica;
     }
 
     .heroImage {
@@ -99,14 +98,21 @@
     h1 {
       font-size: 14pt;
       margin-top: 30px;
-      font-family: bely-display;
+      font-family: Helvetica;
     }
 
     a {
-      font-family: lora;
+        font-family: Helvetica;
+        list-style: none;
+        line-height: 0px;
+        color: black;
+        padding: 10px;
+        margin: 10px;
+      }
+
+    a:link {
       list-style: none;
-      color: black;
-      padding: 20px;
+      text-decoration: none;
     }
 
     /* mouse over link */
@@ -118,7 +124,7 @@
       margin-top: 500px;
       font-size: 12pt;
       z-index: 1;
-      font-family: lora, serif;
+      font-family: Helvetica;
       font-weight: 400;
       font-style: normal;
       font-size: 12pt;
@@ -127,13 +133,13 @@
     .pitch {
       font-size: 18pt;
       margin-top: 100px;
-      font-family: lora;
+      font-family: Helvetica;
       font-weight: 100;
       color: #01A99E;
       width: 75%;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 500px) {
 
       header {
         font-family: bely-display;
@@ -153,10 +159,17 @@
       }
 
       a {
-        font-family: lora;
+        font-family: Helvetica;
         list-style: none;
+        line-height: 0px;
         color: black;
-        padding: 10px;
+        padding: 3px;
+        margin: 10px;
+      }
+
+      a:link {
+        list-style: none;
+        text-decoration: none;
       }
 
       .copyrightTitle {
@@ -183,11 +196,13 @@
       p {
         font-size: 12pt;
       }
+    }
+
   </style>
 </head>
 
 <body>
-  <header>Divvy</header>
+  <header>DivvyUp</header>
 
   <center>
     <div class="links">
@@ -200,12 +215,12 @@
   </center>
 
   
-  <center><h2 class="pitch">Automatically split monthly payments between two or more people.</h2></center>
+  <center><h2 class="pitch">Shared payments between multiple people or debit/credit cards.</h2></center>
 
   <div id="container">
     <div id="content">
       
-      <center><h1>Frequently Asked Questions</h1></center>
+      <center><h1>FAQs</h1></center>
 
       <div>
         <button class="accordion">
@@ -263,4 +278,5 @@
   </script>
 
 </body>
+
 </html>
